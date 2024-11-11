@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "ModularizeProject"
 include(":app")
- 
+include(":feature")
+include(":feature:home")
