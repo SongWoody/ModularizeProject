@@ -10,6 +10,7 @@ java {
 dependencies {
     compileOnly(libs.android.gradlePlugin)
     compileOnly(libs.kotlin.gradlePlugin)
+    compileOnly(libs.compose.compiler.gradle.plugin)
 }
 
 gradlePlugin {
@@ -17,6 +18,12 @@ gradlePlugin {
         register("androidApplication") {
             id = "woody.android.application"
             implementationClass = "AndroidApplicationPlugin"
+        }
+    }
+    plugins {
+        register("androidCompose") {
+            id = "woody.android.compose"
+            implementationClass = "AndroidComposePlugin"
         }
     }
 }

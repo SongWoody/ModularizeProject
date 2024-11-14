@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     id("kotlin-kapt")
     id("org.jetbrains.kotlin.plugin.serialization").version("1.9.0")
+    alias(libs.plugins.woody.android.compose)
 }
 
 android {
@@ -53,12 +54,5 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-
-    implementation(libs.androidx.activity.compose)
-    implementation(platform(libs.androidx.compose.bom))
-    implementation(libs.androidx.material3)
-    implementation(libs.androidx.navigation.compose)
     implementation(libs.kotlinx.serialization.json)
 }

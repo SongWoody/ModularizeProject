@@ -47,7 +47,7 @@ private inline fun <reified T : KotlinTopLevelExtension> Project.configureKotlin
         is KotlinJvmProjectExtension -> compilerOptions
         else -> TODO("Unsupported project extension $this ${T::class}")
     }.apply {
-        jvmTarget.set(JvmTarget.JVM_11)
+        jvmTarget.set(JvmTarget.JVM_17)
         allWarningsAsErrors.set(warningsAsErrors.toBoolean())
         freeCompilerArgs.add(
             // Enable experimental coroutines APIs, including Flow
