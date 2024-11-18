@@ -1,8 +1,9 @@
 plugins {
     alias(libs.plugins.woody.android.application)
     alias(libs.plugins.woody.android.compose)
+    alias(libs.plugins.woody.hilt)
+    alias(libs.plugins.kotlin.serialization)
     id("kotlin-kapt")
-    id("org.jetbrains.kotlin.plugin.serialization").version("1.9.0")
 }
 
 android {

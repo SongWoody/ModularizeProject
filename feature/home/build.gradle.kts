@@ -2,7 +2,7 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     id("kotlin-kapt")
-    id("org.jetbrains.kotlin.plugin.serialization").version("1.9.0")
+    alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.woody.android.compose)
     alias(libs.plugins.woody.hilt)
 }

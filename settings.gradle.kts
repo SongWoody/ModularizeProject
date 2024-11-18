@@ -24,3 +24,4 @@ enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 rootProject.name = "ModularizeProject"
 include(":app")
 include(":feature:home")
+include(":core:data")
