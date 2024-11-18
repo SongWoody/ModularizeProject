@@ -19,11 +19,13 @@ gradlePlugin {
             id = "woody.android.application"
             implementationClass = "AndroidApplicationPlugin"
         }
-    }
-    plugins {
         register("androidCompose") {
             id = "woody.android.compose"
             implementationClass = "AndroidComposePlugin"
+        }
+        register("hilt") {
+            id = "woody.hilt"
+            implementationClass = "HiltPlugin"
         }
     }
 }
